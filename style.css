@@ -1,48 +1,73 @@
 body{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-#calc-container{
-    background-color: chocolate;
-    height: 50vh;
-    width: 20vw;
-    border-radius: 15px;
-    
-}
-
-#display-container{
-    padding: 25px 10px;
-    background-color: black;
-    color: blanchedalmond;
-    border: none;
-    border-radius: 15px 15px 0px 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#button-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-}
-
-#operations{
+    margin: 0;
     display: flex;
     flex-direction: column;
-    
-    
+    justify-content: center;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+
 }
-#numbers{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+
+#myH1{
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
-#numbers .button{
-    border-radius: 100px;
-    background-color: aliceblue;
+
+#watch-container{
+    background-color: rgba(89, 65, 5, 0.397);
+    border-radius: 1em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 50vw;
     
 }
 
+#watch{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-size: 5rem;
+    margin-bottom: 100px;
+    padding: 50px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.496);
+}
+
+#controllers button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: rgba(89, 65, 5, 0.7);
+    padding: 10px 40px;
+    margin: 0px 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(250, 235, 215);
+    cursor: pointer;
+}
+#start:hover{
+    color: rgba(89, 65, 5, 0.978);
+    background-color: olivedrab;
+    color: rgb(250, 235, 215);
+    transition: 0.5s;
+}
+#reset:hover{
+    color: rgba(89, 65, 5, 0.978);
+    background-color: chocolate;
+    color: rgb(250, 235, 215);
+    transition: 0.5s;
+}
+#stop:hover{
+    color: rgba(89, 65, 5, 0.978);
+    background-color: crimson;
+    color: rgb(250, 235, 215);
+    transition: 0.5s;
+}
