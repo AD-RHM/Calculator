@@ -1,73 +1,71 @@
 body{
-    align-items: center;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-
-
+    align-items: center;
 }
 
-#myH1{
-    font-size: 5rem;
+#calc-container{
+    background-color: chocolate;
+    height: 59vh;
+    width: 20vw;
+    border-radius: 15px;
+    color: antiquewhite;
+}
+
+#display{
+    padding: 25px 0px;
+    background-color: rgba(0, 0, 0, 0.278);
+    color: blanchedalmond;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
 }
 
-#watch-container{
-    background-color: rgba(89, 65, 5, 0.397);
-    border-radius: 1em;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 50vh;
-    width: 50vw;
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding-left: 5px;
+
+}
+
+input{
+    color: aliceblue;
+}
+
+#buttons button{
+    border-radius: 50px;
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(128, 128, 128, 0.621);
+    
+
+}
+
+button:active{
+    background-color: rgba(255, 254, 254, 0.878);
     
 }
 
-#watch{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: blanchedalmond;
-    font-size: 5rem;
-    margin-bottom: 100px;
-    padding: 50px;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.496);
+.operators-prop{
+    background-color: black;
+    color: whitesmoke;
+}
+.operators-prop:active{
+    background-color: black;
+    color: rgb(250, 250, 250);
 }
 
-#controllers button{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: large;
-    color: rgba(89, 65, 5, 0.7);
-    padding: 10px 40px;
-    margin: 0px 30px;
-    border: none;
-    border-radius: 2px;
-    background-color: rgb(250, 235, 215);
-    cursor: pointer;
-}
-#start:hover{
-    color: rgba(89, 65, 5, 0.978);
-    background-color: olivedrab;
-    color: rgb(250, 235, 215);
-    transition: 0.5s;
-}
-#reset:hover{
-    color: rgba(89, 65, 5, 0.978);
-    background-color: chocolate;
-    color: rgb(250, 235, 215);
-    transition: 0.5s;
-}
-#stop:hover{
-    color: rgba(89, 65, 5, 0.978);
-    background-color: crimson;
-    color: rgb(250, 235, 215);
-    transition: 0.5s;
-}
+
